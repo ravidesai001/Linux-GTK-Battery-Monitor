@@ -95,7 +95,7 @@ class BatteryMonitor:
             
         percentage.set_text("Battery Percentage: {}%".format(percentage_val))
         discharge.set_text("Discharge Rate: {} W".format(round(voltage_val * current_val, 1)))
-        health.set_text("Battery Health: {}%".format(round((full_charge_cap/full_charge_design_cap)*100)))
+        health.set_text("Battery Health: {}%".format(round((full_charge_cap/full_charge_design_cap)*100, 1)))
         
         
     @staticmethod
